@@ -1,5 +1,6 @@
+
 // Import the image directly to ensure it's included in the build
-import dessertBarImage from '../../assets/images/dessert-bar.png';
+import dessertBarImage from '/images/dessert-bar.jpg';
 
 // Export a component that returns the image URL
 const DessertBarImage = () => {
