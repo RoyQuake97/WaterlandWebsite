@@ -1,0 +1,145 @@
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #00c6ff;
+  --rdp-background-color: #e8f7ff;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 2px solid var(--rdp-accent-color);
+  margin: 1em;
+}
+
+.rdp-months {
+  display: flex;
+  justify-content: center;
+}
+
+.rdp-month {
+  margin: 0 1em;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+
+.rdp-caption_label {
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.rdp-nav {
+  display: flex;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav_prev,
+.rdp-multiple_months .rdp-caption_end .rdp-nav_next {
+  display: block;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav_next,
+.rdp-multiple_months .rdp-caption_end .rdp-nav_prev {
+  display: none;
+}
+
+.rdp-head_cell {
+  font-size: 0.875em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.rdp-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--rdp-cell-size);
+  width: var(--rdp-cell-size);
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.875em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus,
+.rdp-day_selected:hover {
+  background-color: var(--rdp-accent-color);
+  color: white;
+}
+
+.rdp-day_today {
+  font-weight: bold;
+  border: 1px solid var(--rdp-accent-color);
+}
+
+.rdp-day:hover {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-day_outside {
+  opacity: 0.5;
+}
+
+.rdp-day_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rdp-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 0.5em;
+}
+
+/* Availability styling */
+.rdp-day_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.rdp-day_selected .rdp-day_content {
+  background-color: transparent;
+}
+
+/* High availability (green) */
+.availability-high {
+  background-color: #4ade80;
+  color: white;
+}
+
+/* Medium availability (yellow) */
+.availability-medium {
+  background-color: #facc15;
+  color: #4b5563; /* Darker text for readability */
+}
+
+/* Low availability (red) */
+.availability-low {
+  background-color: #f87171;
+  color: white;
+}
+
+/* No availability (grey) */
+.availability-none {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+/* Selected date overrides availability color */
+.rdp-day_selected .rdp-day_content {
+  background-color: #00c6ff !important;
+  color: white !important;
+  text-decoration: none !important;
+}

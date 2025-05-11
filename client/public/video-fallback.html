@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    h1 {
+      color: #1683bf;
+    }
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .paths {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    .paths p {
+      margin: 5px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Waterland Resort Video Test</h1>
+  <p>This page tests video playback from all possible paths.</p>
+  
+  <div class="video-container">
+    <h2>Video from /videos/hero-video.mp4</h2>
+    <video controls muted>
+      <source src="/videos/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="video-container">
+    <h2>Video from root path /DJI_0014 3.mp4</h2>
+    <video controls muted>
+      <source src="/DJI_0014 3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="video-container">
+    <h2>Video from assets /src/assets/DJI_0014 3.mp4</h2>
+    <video controls muted>
+      <source src="/src/assets/DJI_0014 3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="paths">
+    <h3>Available Video Paths</h3>
+    <p>/videos/hero-video.mp4</p>
+    <p>/DJI_0014 3.mp4</p>
+    <p>/src/assets/DJI_0014 3.mp4</p>
+  </div>
+  
+  <script>
+    // Add a background color to the document and body directly
+    document.documentElement.style.backgroundColor = "#ffffff";
+    document.body.style.backgroundColor = "#ffffff";
+  </script>
+</body>
+</html>

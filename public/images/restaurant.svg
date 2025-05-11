@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#6dcf94"/>
+  
+  <!-- Restaurant backdrop -->
+  <rect x="100" y="100" width="600" height="250" rx="20" fill="#ffffff"/>
+  
+  <!-- Windows showing waterpark outside -->
+  <rect x="150" y="150" width="150" height="100" rx="10" fill="#00c6ff"/>
+  <rect x="500" y="150" width="150" height="100" rx="10" fill="#00c6ff"/>
+  <path d="M150,200 Q225,170 300,200" stroke="#0A4C8B" stroke-width="5" fill="none"/>
+  <path d="M500,200 Q575,170 650,200" stroke="#0A4C8B" stroke-width="5" fill="none"/>
+  
+  <!-- Tables -->
+  <circle cx="250" cy="280" r="30" fill="#FFD447"/>
+  <circle cx="550" cy="280" r="30" fill="#FFD447"/>
+  <circle cx="400" cy="280" r="30" fill="#FFD447"/>
+  
+  <!-- Chairs -->
+  <circle cx="250" cy="230" r="15" fill="#F86AA0"/>
+  <circle cx="250" cy="330" r="15" fill="#F86AA0"/>
+  <circle cx="550" cy="230" r="15" fill="#F86AA0"/>
+  <circle cx="550" cy="330" r="15" fill="#F86AA0"/>
+  <circle cx="400" cy="230" r="15" fill="#F86AA0"/>
+  <circle cx="400" cy="330" r="15" fill="#F86AA0"/>
+  
+  <!-- Plates and food -->
+  <circle cx="250" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="2"/>
+  <circle cx="550" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="2"/>
+  <circle cx="400" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="2"/>
+  
+  <text x="400" y="75" font-family="Arial" font-size="35" font-weight="bold" text-anchor="middle" fill="#ffffff">THE HARBOR RESTAURANT</text>
+</svg>

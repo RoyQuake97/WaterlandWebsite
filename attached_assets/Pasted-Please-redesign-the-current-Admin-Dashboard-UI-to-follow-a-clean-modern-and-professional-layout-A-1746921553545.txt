@@ -1,0 +1,54 @@
+Please redesign the current Admin Dashboard UI to follow a clean, modern, and professional layout. Apply the following improvements:
+
+🔧 UI/UX Fixes:
+1. Overall Styling
+Use a light background (#F9FAFB) with a soft shadow card layout for all content blocks.
+
+Apply a consistent padding and spacing system (use 16px or 24px spacing scale).
+
+Use a clean font like Inter or Lato for clarity and a premium look.
+
+2. Top Navigation
+Replace the plain top bar with a white sticky navbar.
+
+Add a small Waterland logo on the left.
+
+Move the "Dashboard" and "Logout" buttons to the right in a cleaner row with modern button styles.
+
+3. Table View Improvements
+Place the "Reservations" title and "Add Reservation" button on the same horizontal row with spacing.
+
+Add clear table borders, alternating row colors (#F5F7FA), and better column spacing.
+
+Group check-in/check-out dates into a single cell titled "Stay Dates".
+
+Replace the current “Paid” button with a toggle switch or badge and ensure status chips (like “Pending”) are colored with soft greens/yellows and rounded.
+
+Add profile avatars or initials in guest column.
+
+4. Calendar View Enhancements
+Add color-coded event bars for each room type.
+
+Include a hover tooltip to show full reservation details.
+
+Enable switching between Day/Week/Month with larger, more intuitive buttons.
+
+Highlight today’s date with a light blue circle.
+
+Ensure better spacing between calendar rows and mobile responsiveness.
+
+5. Form/Modal Consistency
+Redesign the “Add Reservation” modal with stepper progress (1. Guest Info → 2. Room → 3. Dates → 4. Confirm).
+
+Use clear field titles and dropdowns styled with rounded inputs and placeholder text.
+
+Add error handling and field validation UI cues.
+
+6. Responsive Design
+Ensure all views work perfectly on mobile and tablet screens.
+
+Use cards instead of tables on mobile, with key details stacked vertically.
+
+🎨 Design Inspiration
+Follow the style of platforms like Notion, Linear, or Vercel Dashboard — minimal, modern, and intuitive.
+

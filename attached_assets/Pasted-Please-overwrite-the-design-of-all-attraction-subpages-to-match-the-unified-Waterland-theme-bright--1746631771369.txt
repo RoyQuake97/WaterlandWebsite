@@ -1,0 +1,108 @@
+Please overwrite the design of all attraction subpages to match the unified Waterland theme: bright, tropical colors (aqua, white, palm green), clean layout, and elegant spacing. For each attraction, use the following structure and information. The bottom of every page must include a horizontal scrollable bar with the other attractions and a button to return to the home page.
+
+🎢 1. Waterpark & Slides
+Headline:
+Thrills for Every Age
+
+Body Text:
+Welcome to the heart of the action — our iconic water slides! From steep plunges to swirling tubes, there’s something for every thrill-seeker.
+
+Non-stop slide operation from 11:30 AM to 5:00 PM
+
+Note: Some high slides are not suitable for children under 8
+
+No water depth — all slides land safely in shallow splash zones
+
+Shaded and sunlit seating areas available for parents
+
+🧒🏼 2. Kids Waterhouse (formerly "Kids Zone")
+Headline:
+Designed Just for Kids
+
+Body Text:
+Let your little ones splash safely in our sea-themed interactive waterhouse, filled with excitement and color.
+
+Ideal for children under 12 years old
+
+No deep water — fully kid-friendly
+
+Constant staff supervision and secure enclosed space
+
+Mini slides, tipping buckets, and splash fun
+
+🌴 3. VIP Pool & Pool Bar
+Headline:
+Your Exclusive Oasis
+
+Body Text:
+Escape the crowds in our adults-only VIP pool zone — a private, elegant space for quiet sun and premium treatment.
+
+Access on a first come, first served basis — no advance booking
+
+In-water bar with refreshing cocktails and smoothies
+
+Towel service and shaded loungers included
+
+Limited spaces available daily
+
+🏨 4. Resort Hotel
+Headline:
+Stay Where the Fun Never Ends
+
+Body Text:
+Enjoy the full Waterland experience with a stay at our relaxing on-site hotel. Whether you're here for a weekend getaway or a special event, we've got the perfect room for you.
+
+Rooms include free Waterpark access and breakfast
+
+Variety of options for families, couples, and groups
+
+Just steps away from the park, bars, and restaurants
+
+Tap below to explore room types and start booking
+
+👉 Button: View Rooms & Book Stay
+
+🍽️ 5. The Harbor Restaurant
+Headline:
+Fresh, Casual Dining
+
+Body Text:
+Take a break from the slides and enjoy a meal with a view at our poolside Harbor Restaurant.
+
+Open daily from 10:00 AM to 5:00 PM
+
+Fresh, international menu — no Lebanese food served
+
+Family-friendly seating and poolside ambiance
+
+Drinks, sandwiches, burgers, and more
+
+🍧 6. Dessert & Snack Bar
+Headline:
+Sweet Treats Coming Soon
+
+Body Text (blurred/low opacity):
+A new favorite is on the way! We're preparing something delicious for your summer cravings.
+
+Protein shakes
+
+Soft-serve ice cream & frozen yogurt
+
+Iced coffees & crepes
+
+✨ Stay tuned for the grand opening!
+
+🛍️ 7. Boutique Shop
+Headline:
+Grab What You Forgot
+
+Body Text:
+Forgot your towel? Need a quick snack or sunscreen? Our boutique shop has your back.
+
+Open from 10:00 AM to 7:00 PM
+
+Swimwear, accessories, beach toys, essentials
+
+Cash only — cards not accepted
+
+Located near the main entrance

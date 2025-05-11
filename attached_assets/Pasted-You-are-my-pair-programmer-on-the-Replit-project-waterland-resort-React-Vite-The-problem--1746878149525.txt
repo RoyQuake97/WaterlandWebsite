@@ -1,0 +1,45 @@
+You are my pair-programmer on the Replit project **waterland-resort** (React + Vite).  
+The problem: every slide in the “RoomsCarousel” (Junior / Twin / Ambassador) shows blank because the photos (`junior1.jpg`, …, `ambassador7.jpg`) are referenced as plain strings and Vite rewrites asset paths at build time.
+
+**Your tasks (execute in order, commit after each headline):**
+
+1. **perf: replace string paths with Vite-safe imports**  
+   • Locate the component(s) that render the carousel (`RoomsCarousel.jsx|tsx`, `RoomSlides.js`, or similar).  
+   • Create a helper that loads images via `import.meta.glob`:  
+     ```js
+     const slides = {
+       junior: import.meta.glob('../assets/junior*.jpg', { eager:true, import:'default' }),
+       twin: import.meta.glob('../assets/twin*.jpg', { eager:true, import:'default' }),
+       ambassador: import.meta.glob('../assets/ambassador*.jpg', { eager:true, import:'default' })
+     };
+     ```  
+   • Replace existing `<img src="assets/junior1.jpg" …>` with:  
+     ```jsx
+     const images = Object.values(slides[roomType]);
+     … <img src={images[i]} alt={`${roomType} view ${i+1}`} />
+     ```  
+
+2. **style: guarantee visible height & cover fit**  
+   • In the carousel’s CSS / styled component add:  
+     ```css
+     .slide, .slide img {
+       width: 100%;
+       height: 240px;        /* adjust to design */
+       object-fit: cover;
+     }
+     ```  
+   • Make sure the parent Swiper/Slick container isn’t collapsing (min-height or flex).  
+
+3. **fix: unique React keys & lazy-load**  
+   • When mapping slides use a stable key: ``key={`${roomType}-${i}`}``.  
+   • Add `loading="lazy"` to each `<img>`.
+
+4. **test: verify in preview & production build**  
+   • Run `npm run dev` → confirm photos render.  
+   • Run `npm run build && npx serve dist` → confirm photos still render (no 404s in Network tab).  
+
+5. **docs: update README**  
+   • Note the glob-import technique and image naming convention so future photos auto-load.
+
+Stop when both dev and production previews display all carousel images correctly on desktop and mobile.  
+Return a short summary of changes and Lighthouse score difference, then await further instructions.

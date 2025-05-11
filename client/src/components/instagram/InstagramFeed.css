@@ -1,0 +1,78 @@
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.instagram-post {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.instagram-post-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.instagram-post:hover .instagram-post-image {
+  filter: brightness(1.05);
+}
+
+.instagram-post-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 2rem 1rem 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-post:hover .instagram-post-overlay {
+  opacity: 1;
+}
+
+.instagram-load-more {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Hover effects for Instagram branding */
+.instagram-icon {
+  color: #E1306C;
+  transition: transform 0.3s ease;
+}
+
+.instagram-button:hover .instagram-icon {
+  transform: scale(1.2);
+}
+
+/* Waterland theme colors and gradients */
+.waterland-gradient {
+  background: linear-gradient(135deg, #0A4C8B 0%, #00A8E8 100%);
+}
+
+.waterland-post-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0A4C8B;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

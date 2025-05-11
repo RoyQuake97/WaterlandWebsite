@@ -1,0 +1,321 @@
+Create a fully responsive, dynamic website for Waterland Resort & Waterpark in Lebanon that allows for online reservations, hotel room and waterpark information, digital menus, and real-time operational updates. The site must be mobile-friendly, SEO-ready, and simple for staff to update via backend/admin panel.
+
+KEY SECTIONS + FUNCTIONALITY
+1. Homepage
+Hero section with slideshow (photos of Waterpark, Hotel, Food, VIP Pool)
+
+Opening hours summary (auto-updates based on season)
+
+Call-to-action buttons (Book Now, Explore Resort)
+
+Announcement bar (e.g. “Last Day of Season is Sept 15” or “Now Hiring”)
+
+2. Waterpark Section
+Waterpark Overview Page:
+
+Description of the waterpark experience
+
+Slideshow/video gallery
+
+Open hours (admin-editable per season)
+
+Ticket Pricing:
+
+$20/person general entry
+
+$25/person VIP pool access
+
+All ages same price
+
+Clearly mention: “No outside food or drink allowed. No personal speakers. Resort music available all day. Open 10:00 AM – 7:00 PM.”
+
+3. Hotel Section
+Description of stay packages
+
+Room categories with photos:
+
+Junior Room: $250/night – 2 adults, 1 child
+
+Twin Room: $300/night – 2 adults, 2 children
+
+Ambassador Room: $350/night – 2 adults, 3 children
+
+Inclusions:
+
+2-day waterpark access
+
+Breakfast
+
+Availability calendar (optional now, ideal if scalable later)
+
+Online Booking Form:
+
+Select dates
+
+Choose room type
+
+Number of adults & children (auto-calculates appropriate package)
+
+Phone number & name
+
+Submit button (sends to admin email + stores in database)
+
+4. Reservations Dashboard (Backend Only)
+Admin-only panel (secure login)
+
+Manual Reservation Entry:
+
+For bookings taken via WhatsApp, phone, or in person
+
+Fields: Name, date, room, number of people, notes
+
+Option to mark reservation as paid/unpaid
+
+View all reservations in calendar/list format
+
+Search/filter reservations
+
+5. Menu Section
+Main Menu: Starters, burgers, platters, pizzas
+
+Cocktail & Mocktail Menu:
+
+Listed with image, name, and ingredient animation (optional gallery version later)
+
+Optional: PDF version download button
+
+6. Events / Birthday Booking Page
+Details for birthday packages
+
+Photo gallery of past events
+
+Inquiry form:
+
+Name
+
+Date
+
+Expected number of guests
+
+Contact number
+
+Custom message
+
+7. Contact Page
+Location embedded (Google Maps)
+
+Phone: +961 70 510 510
+
+WhatsApp direct link (wa.me/96170510510)
+
+Contact form:
+
+Name
+
+Subject
+
+Message
+
+8. Careers Page
+“Now Hiring” section with job cards (e.g. Chef, Lifeguard, Receptionist)
+
+Upload CV option or send CV to WhatsApp
+
+Short form to collect applicant interest (name, phone, position applying for)
+
+9. Admin Panel
+Add/edit room prices and packages
+
+Add/edit open dates for hotel and waterpark
+
+Add manual reservations
+
+Upload menu PDFs or text
+
+Update ticket prices
+
+Toggle seasonal messages or homepage banner
+
+Edit announcement bar
+
+MUST-HAVE TECHNICAL FEATURES
+Responsive across all devices
+
+Fast loading
+
+Arabic language support (optional but ideal to plan for)
+
+SEO-optimized structure
+
+Contact form spam protection
+
+Hosted database for reservations & menu content
+
+Social media links in footer (Instagram, Facebook, TikTok)
+
+INTEGRATIONS
+WhatsApp API Link for inquiries
+
+Optional: Google Calendar sync for reservations
+
+Optional: Online payment integration (for future scaling)
+
+DELIVERABLES
+Fully designed and functioning website (1080x1920 mobile optimized, desktop-friendly)
+
+Admin panel/dashboard
+
+Database backend (for reservations + menu edits)
+
+Training for you or your team to use the backend
+
+ESTIMATED TIMELINE
+Depending on experience:
+
+Design Phase: 4–5 days
+
+Development Phase: 10–14 days
+
+Testing & Launch: 3–5 days
+Estimated Total: 15–20 working days
+
+REQUEST FOR QUOTE
+Please provide:
+
+Your proposed timeline
+
+Price for full development
+
+Hosting/domain advice (if not included)
+
+Would you like this turned into a downloadable PDF to send on Freelancer.com?
+
+
+
+
+
+
+You said:
+Please adjust the document above to send it to an ai to code me a full wordpress code to directly copy and paste it 
+ChatGPT said:
+Sure! Below is the adjusted version of your document rewritten to give clear, step-by-step instructions to an AI tool that can generate WordPress-compatible HTML, PHP, and CSS code for a full resort website.
+
+INSTRUCTION FOR AI DEVELOPER (CODE GENERATION TASK)
+You are to create a fully functional WordPress theme or template (including necessary functions.php, style.css, and page templates) for a luxury resort and waterpark called Waterland Resort & Waterpark in Lebanon. The site should be responsive, clean, and modern. Code must follow WordPress structure and should be copy/paste-ready for integration into WordPress.
+
+SITE STRUCTURE & FUNCTIONALITY (Generate Code For Each Section)
+1. Homepage
+Hero section with large background image and animated text:
+"Stay. Slide. Repeat."
+
+CTA buttons: "Book Now" and "Explore Waterland"
+
+Section: Quick summary of hotel and waterpark
+
+Section: Seasonal banner (editable via admin)
+
+2. Waterpark Page
+Description area with featured image carousel
+
+Two pricing cards:
+
+General Access: $20
+
+VIP Pool Access: $25
+(All ages same price)
+
+Static opening hours: 10 AM – 7 PM
+
+Message (stylized):
+“No outside food or drink allowed. No speakers permitted. Background music is available all day.”
+
+3. Hotel Page
+Three hotel room cards:
+
+Junior Room – $250/night – 2 Adults + 1 Child
+
+Twin Room – $300/night – 2 Adults + 2 Children
+
+Ambassador Room – $350/night – 2 Adults + 3 Children
+
+Inclusions listed under each:
+2 Days Waterpark Entry + Breakfast
+
+Booking form (submit to admin email):
+Fields: Name, Phone, Adults, Children, Check-in, Notes
+
+4. Reservation System (Backend Only)
+Use a custom WordPress admin page or Custom Post Type called “Reservations”
+
+Admin can:
+
+Add manual bookings from WhatsApp
+
+Mark them paid/unpaid
+
+Search by guest name or date
+
+5. Menu Page
+Split section:
+
+Food Menu categories (Appetizers, Platters, Burgers)
+
+Cocktail & Mocktail section
+
+Each item displays: drink name + 3 ingredients
+
+Option to upload PDF menu via admin backend
+
+6. Birthday/Event Page
+Showcase photos of past events
+
+Paragraph explaining birthday packages
+
+Inquiry form: name, number of guests, preferred date, phone
+
+7. Careers Page
+Job listings (static for now)
+
+Call-to-action: “Send your CV to WhatsApp 70 510 510”
+
+Optional contact form to collect: name, phone, position
+
+8. Contact Page
+Embedded Google Map of Waterland Resort
+
+Address: Ardeh, Zgharta, North Lebanon
+
+WhatsApp link: wa.me/96170510510
+
+Contact form with Name / Message / Subject / Submit to admin email
+
+EXTRA FUNCTIONALITY
+Custom Theme Options:
+
+Edit homepage banners
+
+Update open/close dates
+
+Set ticket prices
+
+Toggle “Now Hiring” ribbon
+
+Integrate WhatsApp direct click-to-chat
+
+Reservation CPT (Custom Post Type)
+
+STYLE GUIDE
+Font: Montserrat, Avenir, or similar modern sans-serif
+
+Color Palette:
+
+Aqua Blue (#00c6ff)
+
+Palm Green (#6dcf94)
+
+Soft Beige (#f5f1e9)
+
+White text on dark backgrounds
+
+Layout: Clean, mobile-first grid (flexbox preferred)
+

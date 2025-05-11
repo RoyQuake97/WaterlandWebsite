@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F86AA0"/>
+  
+  <!-- Counter -->
+  <rect x="150" y="200" width="500" height="150" rx="10" fill="#FFD447"/>
+  <rect x="150" y="190" width="500" height="20" rx="5" fill="#0A4C8B"/>
+  
+  <!-- Ice cream -->
+  <circle cx="250" cy="170" r="30" fill="#ffffff"/>
+  <circle cx="280" cy="150" r="20" fill="#6dcf94"/>
+  <path d="M240,190 L265,230" stroke="#FFD447" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Waffle -->
+  <rect x="350" y="150" width="60" height="60" fill="#FFD447" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="350" y1="162" x2="410" y2="162" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="350" y1="174" x2="410" y2="174" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="350" y1="186" x2="410" y2="186" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="350" y1="198" x2="410" y2="198" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="362" y1="150" x2="362" y2="210" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="374" y1="150" x2="374" y2="210" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="386" y1="150" x2="386" y2="210" stroke="#0A4C8B" stroke-width="2"/>
+  <line x1="398" y1="150" x2="398" y2="210" stroke="#0A4C8B" stroke-width="2"/>
+  
+  <!-- Smoothie -->
+  <path d="M500,150 L520,210 L480,210 Z" fill="#6dcf94"/>
+  <path d="M490,210 L490,230 L510,230 L510,210" fill="#6dcf94"/>
+  <circle cx="500" cy="170" r="10" fill="white"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="250" r="15" fill="#ffffff"/>
+  <circle cx="300" cy="250" r="15" fill="#00c6ff"/>
+  <circle cx="400" cy="250" r="15" fill="#ffffff"/>
+  <circle cx="500" cy="250" r="15" fill="#00c6ff"/>
+  <circle cx="600" cy="250" r="15" fill="#ffffff"/>
+  
+  <text x="400" y="75" font-family="Arial" font-size="35" font-weight="bold" text-anchor="middle" fill="#ffffff">DESSERT & SNACK BAR</text>
+</svg>

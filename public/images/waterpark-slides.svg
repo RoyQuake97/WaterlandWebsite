@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#00c6ff"/>
+  <path d="M0,300 Q400,200 800,300 L800,400 L0,400 Z" fill="#ffffff"/>
+  <path d="M50,220 C100,100 200,180 150,300" stroke="#FFD447" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M250,200 C300,100 400,150 350,300" stroke="#F86AA0" stroke-width="30" fill="none" stroke-linecap="round"/>
+  <path d="M550,220 C600,100 700,180 650,300" stroke="#0A4C8B" stroke-width="25" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="300" r="10" fill="#ffffff"/>
+  <circle cx="350" cy="300" r="15" fill="#ffffff"/>
+  <circle cx="650" cy="300" r="12" fill="#ffffff"/>
+  <text x="400" y="100" font-family="Arial" font-size="35" font-weight="bold" text-anchor="middle" fill="#ffffff">WATERPARK SLIDES</text>
+</svg>

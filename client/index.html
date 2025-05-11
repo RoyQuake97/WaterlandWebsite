@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #ffffff !important;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+  <title>Waterland Resort & Waterpark</title>
+  
+  <!-- Preload video for faster loading -->
+  <link rel="preload" as="video" href="/videos/hero-video.mp4" type="video/mp4">
+  
+  <!-- Global CSS overrides -->
+  <link rel="stylesheet" href="/global-overrides.css">
+  
+  <!-- Critical CSS for initial render -->
+  <style>
+    html, body, #root {
+      background-color: #ffffff !important;
+      background: #ffffff !important;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #111111;
+    }
+    
+    /* Preloading video for better initial loading */
+    .video-preload {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body style="background-color: #ffffff !important;">
+  <!-- Preload video assets -->
+  <div class="video-preload">
+    <video preload="auto" width="1" height="1" muted>
+      <source src="/videos/hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div id="root" style="background-color: #ffffff !important;"></div>
+  
+  <script>
+    // Force white background before any React code runs
+    document.documentElement.style.backgroundColor = "#ffffff";
+    document.body.style.backgroundColor = "#ffffff";
+    
+    // Add a class to enable detection of production vs development
+    document.documentElement.classList.add('production-build');
+    
+    // Add mutation observer to ensure the background stays white
+    const observer = new MutationObserver(function(mutations) {
+      document.documentElement.style.backgroundColor = "#ffffff";
+      document.body.style.backgroundColor = "#ffffff";
+      
+      const rootElement = document.getElementById("root");
+      if (rootElement) {
+        rootElement.style.backgroundColor = "#ffffff";
+      }
+    });
+    
+    observer.observe(document.documentElement, { 
+      attributes: true,
+      childList: true,
+      subtree: true
+    });
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

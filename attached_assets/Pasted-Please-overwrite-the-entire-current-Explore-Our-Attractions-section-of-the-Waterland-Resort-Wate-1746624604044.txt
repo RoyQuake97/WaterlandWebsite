@@ -1,0 +1,82 @@
+Please overwrite the entire current “Explore Our Attractions” section of the Waterland Resort & Waterpark website. Replace all previous design and content elements with the following updated version. The new layout should be interactive, mobile-friendly, and visually consistent with Waterland’s premium summer resort identity.
+
+Use clickable cards or blocks, each containing:
+	•	A bold title
+	•	A short teaser description
+	•	A thumbnail or icon
+	•	On click: opens a detailed view or modal with the full attraction info
+
+Keep the design clean, spaced, and aligned with Waterland’s branding (aqua blue, white, and tropical orange). Prioritize readability and intuitive navigation.
+
+⸻
+
+NEW CONTENT (to be implemented):
+
+1. Waterpark & Slides
+Thrilling slides and splash attractions for all ages.
+	•	Some high slides not suitable for kids under 8
+	•	Slides operate continuously from 11:30 AM to 5:00 PM
+	•	No water depth (slides land into splash zones, not pools)
+	•	Shaded and sunny seating available
+	•	Entry fee: $20 per person (all ages)
+	•	Open daily: 10 AM – 7 PM
+
+⸻
+
+2. Kids Waterhouse
+A sea-themed wonderland built just for little ones.
+	•	Ideal for children under 12
+	•	Features: tipping bucket, mini slides, water cannons
+	•	Shallow padded splash zones
+	•	Constant lifeguard supervision
+	•	Comfortable seating for parents nearby
+
+⸻
+
+3. VIP Pool & Pool Bar
+An exclusive escape with in-water bar service.
+	•	First-come, first-served access (no bookings taken)
+	•	Includes towel service and quick food/drink service
+	•	In-water cocktail/mocktail bar
+	•	Limited capacity for a premium atmosphere
+	•	Entry fee: $25 per person
+	•	Open daily: 10 AM – 7 PM
+
+⸻
+
+4. Resort Hotel
+Stay overnight with resort benefits included.
+	•	Room types: Junior, Twin, Ambassador
+	•	Pricing: $250–$350/night
+	•	All stays include 2-day waterpark access and breakfast
+	•	Room suggestion logic based on guest count and ages
+	•	CTA: Link to reservation form (no need to show room images here)
+
+⸻
+
+5. The Harbor Restaurant
+International cuisine served with a view.
+	•	No Lebanese dishes offered
+	•	Waterpark-view seating with relaxing ambiance
+	•	Operating hours: 10 AM – 5 PM
+	•	Menu access via button: “View Menu”
+
+⸻
+
+6. Dessert & Snack Bar (COMING SOON — BLURRED OUT)
+A cool-down stop for sweet treats.
+	•	Items: crepes, protein shakes, frozen yogurt, iced coffees, soft cream
+	•	Operating hours: 12 PM – 6:30 PM
+	•	Keep this section blurred/locked with “Coming Soon”
+
+⸻
+
+7. Boutique Shop
+Essentials and souvenirs, just steps away.
+	•	Products: flip-flops, sunscreen, swimwear, branded items
+	•	Cash only (no card payments accepted)
+	•	Open daily: 10 AM – 7 PM
+
+⸻
+
+Please ensure this new structure fully replaces the existing one and fits seamlessly within the site’s design system. Use smooth animations or hover states for interactivity where possible. If images are not provided, use placeholders or blurs.

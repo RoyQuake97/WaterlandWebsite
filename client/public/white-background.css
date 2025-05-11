@@ -1,0 +1,13 @@
+/* Force white background in production */
+html, body, #root {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #111111;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

@@ -1,0 +1,6 @@
+# Robots.txt file for Waterland Resort & Waterpark
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://waterlandresort.com/sitemap.xml

@@ -1,0 +1,52 @@
+Your mission: raise https://waterlandwaterpark.com from a Lighthouse mobile Performance score 57 → 90+ while preserving all visuals and copy.  
+You have full access to the Replit workspace **waterland-resort** (Vite + React).  
+Below is the PageSpeed Insights diagnosis you must fix:  
+• First Contentful Paint 8 s, Largest Contentful Paint 40.9 s, Speed Index 8 s, Total Blocking Time 70 ms, CLS 0.009.   
+• Warnings: 25 MB payload, 6.8 MB un-optimised images, 792 KiB text compression, 617 KiB unused JS, 85 KiB unused CSS, 1 800 ms render-blocking, 986-element DOM, no explicit img width/height, 40 kB legacy JS, robots.txt invalid (66 errors), buttons & links lack accessible names, poor colour contrast. :contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}  
+
+### Deliverables  
+1. **Code commits** implementing every fix below.  
+2. **Commit messages** prefixed with “perf:” or “a11y:” explaining each change.  
+3. **README snippet** listing added npm packages or config flags.  
+4. Re-run Lighthouse in Replit’s browser preview; stop only when mobile Performance ≥ 90, Accessibility ≥ 95, SEO ≥ 95, Best Practices 100.  
+
+### Fix List (implement top-to-bottom)  
+
+#### 1. Network & Compression  
+- Add `vite-plugin-compression` (brotli + gzip) and ensure server sets `Cache-Control: public,max-age=31536000,immutable` for assets.  
+- Configure HTTP/2 push/preload for hero video & main font in `vite.config.js`.  
+
+#### 2. Images  
+- Convert all `.jpg/.png` to responsive `.webp` and `.avif` via `vite-plugin-imagemin`, keep originals as fallback.  
+- Add `loading="lazy"` plus explicit `width`/`height` and `sizes` attributes on every `<img>`/`<source>`; use `object-fit:cover`.  
+- Replace background hero JPG with auto-playing compressed H-265 MP4 + poster image (preloaded).  
+
+#### 3. JavaScript & CSS Diet  
+- Enable Vite’s `build.rollupOptions.output.manualChunks` to split vendor libs; dynamic-import heavy components (e.g., room slider, map).  
+- Remove unused CSS via `@fullhuman/postcss-purgecss`; tree-shake unused MUI icons.  
+- Add `"type":"module"` and set `"browserslist":"defaults and supports es6-module"` so modern browsers skip legacy polyfills.  
+
+#### 4. Critical Rendering Path  
+- Inline critical CSS for above-the-fold hero (use `vite-plugin-critical`).  
+- Move all non-critical third-party scripts to `defer` or `async`; eliminate render-blocking Google Fonts by self-hosting `Inter` (with `font-display:swap`).  
+
+#### 5. DOM & Layout  
+- Reduce DOM from 986 → ≤ 600 by merging nested divs and replacing icon lists with CSS pseudo-elements where possible.  
+- Add `min-height` skeletons to prevent layout shift; verify CLS < 0.05.  
+
+#### 6. Accessibility (a11y)  
+- Give every interactive element a discernible text or `aria-label`; ensure slider buttons announce position.  
+- Run `npm run lint:a11y` (include `eslint-plugin-jsx-a11y`) and fix all violations.  
+- Increase colour-contrast ratios to WCAG AA (≥ 4.5:1) via CSS vars.  
+- Add `<track kind="captions">` to video.  
+
+#### 7. SEO & Robots  
+- Regenerate valid `robots.txt` (allow all, disallow /admin); add XML sitemap with lastmod.  
+- Ensure every page has canonical URL, meta description, `lang="en"`, OpenGraph and Twitter tags.  
+- Convert `<button>` navigation icons to `<a>` so links are crawlable.  
+
+#### 8. Testing & Verification  
+- Run Lighthouse CI (`@lhci/cli`) in GitHub Actions; budget thresholds: FCP < 2 s, LCP < 2.5 s, TBT < 150 ms, CLS < 0.1, Total size < 2 MB.  
+- Snapshot before/after scores in `/performance/` folder.  
+
+**Remember:** No visual regressions; keep “Stay. Slide. Repeat.” hero intact. Comment code changes where non-trivial. Push when all KPIs pass.  

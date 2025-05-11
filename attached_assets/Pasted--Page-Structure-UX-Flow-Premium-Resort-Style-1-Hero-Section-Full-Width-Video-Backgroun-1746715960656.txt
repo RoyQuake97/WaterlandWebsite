@@ -1,0 +1,73 @@
+💡 Page Structure & UX Flow (Premium, Resort-Style)
+
+1. Hero Section (Full-Width Video)
+🎥 Background: Auto-playing muted video of resort views from the rooms (you can crop your aerial footage to show panoramic balcony views).
+
+Overlay Text (centered, white, soft drop shadow):
+“All 20 Rooms Overlook the Waterpark.”
+Step into a view that never gets old.
+
+2. Benefits Section (Cards or Icons with Hover Interactions)
+Use soft floating cards or icon rows to highlight what guests get when booking:
+
+✅ 2 Days of Waterpark Access
+
+🍳 Complimentary Lebanese Breakfast
+
+🛏️ Comfortable, modern rooms with balcony views
+
+💦 Direct resort access
+
+📶 Free Wi-Fi
+
+🔋 24/7 Electricity
+
+❌ No pets allowed
+
+❌ No food or drinks permitted into the Waterpark
+
+📸 Instagram-worthy views guaranteed
+
+3. Room Categories Section (Now with Swipeable Image Galleries)
+Display 3 card blocks: Junior Room, Twin Room, Ambassador Room.
+
+Each room card includes:
+
+Room Name
+
+Gallery Slider with swipeable room images (minimum 3 images per room)
+
+Best fits: Icons of adults/kids/helpers (e.g. 👨‍👩‍👧 2 adults, 1 child – Junior Room)
+
+Price (starting from $250)
+
+Clean, minimalist design
+
+✅ CTA Button: "Check Availability"
+
+🧭 Below the cards:
+💬 Not sure what room fits? Don’t worry — based on your group size, we’ll recommend the ideal room.
+👉 [Let Us Recommend One →] (opens smart room selector)
+
+5. Find Your Room – Smart Booking Form Call-to-Action
+Full-width section with large button:
+🛏️ Find the Perfect Room For You
+Based on your group size, age, and number — we’ll match you with the ideal room.
+
+Clicking the button launches the existing 4-step smart reservation form.
+
+6. Sticky Footer or Floating Bar (Mobile)
+Keep a CTA always visible on mobile:
+👉 “Start Your Booking”
+
+🎨 Design Guidelines
+Color Scheme: Water tones (light aqua, seafoam, coral accents)
+
+Font: Clean sans-serif (Lato, Inter, or similar)
+
+Icons: Minimalist line style (use Heroicons or similar)
+
+Image Galleries: Horizontal swipeable (carousel) with smooth transitions, pinch zoom on mobile
+
+Motion/UX: Subtle fades, shadows, smooth scroll, and feedback animations on button interactions
+

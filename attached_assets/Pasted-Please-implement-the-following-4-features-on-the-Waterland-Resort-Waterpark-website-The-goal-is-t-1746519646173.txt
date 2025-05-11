@@ -1,0 +1,51 @@
+Please implement the following 4 features on the Waterland Resort & Waterpark website. The goal is to increase engagement, credibility, and booking intent through live and dynamic components.
+
+Please use clean code, modern styling, and ensure all additions are mobile-optimized and blend with the site’s premium design tone.
+
+⸻
+
+✅ Feature 1: 3-Day Weather Forecast in Navbar
+	•	Add a small live weather widget to the top-right of the navigation bar
+	•	It should show today + 2 days ahead
+	•	Format: Icon + temperature (°C) + day name
+	•	Use a weather API like OpenWeatherMap, geolocated for Ardeh, North Lebanon
+	•	Style it with a soft background (white or beige) and icons matching the site’s color palette
+	•	Example: “☀️ 29°C Today | 🌤 27°C Fri | 🌧 24°C Sat”
+
+⸻
+
+✅ Feature 2: Live Google Reviews Feed
+	•	Pull real-time Google Reviews for “Waterland Resort & Waterpark Lebanon”
+	•	Display them in a clean sliding carousel format with:
+	•	Reviewer name
+	•	Star rating
+	•	Review excerpt
+	•	“View on Google” link
+	•	Place this under the “Testimonials” or “Why People Love Waterland” section
+	•	Must update automatically without manual entry
+
+⸻
+
+✅ Feature 3: Interactive Google Maps Embed
+	•	Embed a fully interactive Google Map (not just an image)
+	•	Centered on: C/Cobalto, 21 (Polígono San Cristobal) 47012 Valladolid – España
+(Correction: Use Waterland’s actual address if different)
+	•	Include a “Get Directions” button below the map
+	•	Make it responsive and allow user zoom and pan
+	•	Place it in the “Visit Us” or “Contact & Location” section of the site
+
+⸻
+
+✅ Feature 4: Live Instagram Wall from @waterland.lb
+	•	Embed a real-time Instagram feed pulling from @waterland.lb
+	•	Style as a full-width grid (3 to 4 photos per row, auto refresh every few hours)
+	•	Use a service like LightWidget, Elfsight, or direct Graph API
+	•	Add a small “Follow us on Instagram” banner above it
+	•	Place it at the bottom of the homepage, just above the footer
+
+⸻
+
+📱 Responsiveness & Style Notes
+	•	All components must scale perfectly on mobile and desktop
+	•	Use smooth transitions and lazy loading to preserve speed
+	•	Keep styles consistent with Waterland’s summer branding (aqua blue, white, gold accents)

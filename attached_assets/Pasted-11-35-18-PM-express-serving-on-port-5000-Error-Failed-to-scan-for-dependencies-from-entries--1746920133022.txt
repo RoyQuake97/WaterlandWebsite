@@ -1,0 +1,51 @@
+11:35:18 PM [express] serving on port 5000
+Error:   Failed to scan for dependencies from entries:
+  /home/runner/workspace/client/index.html
+/home/runner/workspace/client/public/index.html
+/home/runner/workspace/client/public/video-fallback.html
+
+  ✘ [ERROR] Unexpected closing "motion.div" tag does not match opening "div" tag
+
+    client/src/pages/Home.tsx:195:16:
+      195 │               </motion.div>
+          │                 ~~~~~~~~~~
+          ╵                 div
+
+  The opening "div" tag is here:
+
+    client/src/pages/Home.tsx:167:15:
+      167 │               <div className="container mx-auto my-4 px-4">
+          ╵                ~~~
+
+
+✘ [ERROR] Unexpected closing "div" tag does not match opening "motion.div" tag
+
+    client/src/pages/Home.tsx:196:14:
+      196 │             </div>
+          │               ~~~
+          ╵               motion.div
+
+  The opening "motion.div" tag is here:
+
+    client/src/pages/Home.tsx:157:11:
+      157 │           <motion.div
+          ╵            ~~~~~~~~~~
+
+
+✘ [ERROR] Unterminated regular expression
+
+    client/src/pages/Home.tsx:197:16:
+      197 │           </div>
+          ╵                 ^
+
+
+    at failureErrorWithLog (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+    at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1315:45)
+    at buildResponseToResult (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:943:7)
+    at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:955:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:954:54)
+    at handleRequest (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:647:17)
+    at handleIncomingPacket (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:672:7)
+    at Socket.readFromStdout (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#00A8E8"/>
+  
+  <!-- Base water area -->
+  <rect x="100" y="250" width="600" height="150" fill="#00c6ff"/>
+  
+  <!-- Waterhouse structure -->
+  <rect x="200" y="120" width="400" height="150" fill="#F86AA0" rx="20"/>
+  <path d="M180,120 L620,120 L400,50 Z" fill="#0A4C8B"/>
+  
+  <!-- House details -->
+  <rect x="300" y="170" width="80" height="100" fill="#ffffff"/>
+  <rect x="420" y="170" width="80" height="100" fill="#ffffff"/>
+  <rect x="330" y="220" width="20" height="50" fill="#00c6ff"/>
+  <rect x="450" y="220" width="20" height="50" fill="#00c6ff"/>
+  
+  <!-- Tipping bucket -->
+  <rect x="380" y="70" width="40" height="40" fill="#FFD447"/>
+  <path d="M380,110 L375,130 M420,110 L425,130" stroke="#FFD447" stroke-width="3" fill="none"/>
+  <path d="M365,130 L400,150 L435,130" fill="#00c6ff" opacity="0.5"/>
+  
+  <!-- Water cannons -->
+  <rect x="250" y="200" width="30" height="15" fill="#ffffff" rx="5"/>
+  <path d="M265,200 L265,180" stroke="#ffffff" stroke-width="5"/>
+  <path d="M265,180 L250,165" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M250,165 L230,160" stroke="#00c6ff" stroke-width="3" stroke-dasharray="2" opacity="0.7"/>
+  
+  <rect x="520" y="200" width="30" height="15" fill="#ffffff" rx="5"/>
+  <path d="M535,200 L535,180" stroke="#ffffff" stroke-width="5"/>
+  <path d="M535,180 L550,165" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M550,165 L570,160" stroke="#00c6ff" stroke-width="3" stroke-dasharray="2" opacity="0.7"/>
+  
+  <!-- Mini slides -->
+  <path d="M250,150 C270,170 290,190 270,220" stroke="#FFD447" stroke-width="15" fill="none" stroke-linecap="round"/>
+  <path d="M550,150 C530,170 510,190 530,220" stroke="#FFD447" stroke-width="15" fill="none" stroke-linecap="round"/>
+  
+  <!-- Sea creatures -->
+  <circle cx="150" cy="300" r="15" fill="#F86AA0"/>
+  <circle cx="155" cy="295" r="3" fill="white"/>
+  <path d="M135,300 Q150,315 165,300" stroke="#F86AA0" stroke-width="3" fill="none"/>
+  
+  <path d="M650,290 L670,280 L690,290 L670,300 Z" fill="#0A4C8B"/>
+  <circle cx="660" cy="285" r="2" fill="white"/>
+  
+  <!-- Children -->
+  <circle cx="300" cy="300" r="10" fill="#ffffff"/>
+  <path d="M300,310 L300,330" stroke="#ffffff" stroke-width="3"/>
+  <path d="M300,315 L285,325" stroke="#ffffff" stroke-width="3"/>
+  <path d="M300,315 L315,325" stroke="#ffffff" stroke-width="3"/>
+  
+  <circle cx="500" cy="300" r="8" fill="#ffffff"/>
+  <path d="M500,308 L500,325" stroke="#ffffff" stroke-width="2"/>
+  <path d="M500,315 L490,325" stroke="#ffffff" stroke-width="2"/>
+  <path d="M500,315 L510,325" stroke="#ffffff" stroke-width="2"/>
+  
+  <text x="400" y="370" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff" stroke="#0A4C8B" stroke-width="1">KIDS WATERHOUSE</text>
+</svg>

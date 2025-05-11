@@ -1,0 +1,97 @@
+I'll troubleshoot your Google Reviews component to identify why it's not fetching real Google reviews. Let me analyze the code systematically.
+Key Issues Identified
+After examining your EnhancedGoogleReviews component, I've identified several issues that could be preventing the component from fetching real Google reviews:
+
+Missing API Integration: The code attempts to fetch data using React Query, but doesn't specify an actual API endpoint.
+Missing API Client Setup: There's no Google Places API or similar service configured to actually retrieve the reviews.
+No Error Handling for API Responses: The component expects a specific data structure but doesn't handle potential API response errors.
+Missing Backend or API Proxy: To fetch Google reviews, you typically need a backend service that makes the API calls with your credentials.
+
+Let me explain these issues in more detail and provide solutions:
+1. Missing API Endpoint Configuration
+The React Query configuration doesn't specify a real endpoint:
+javascriptconst { data, isLoading, isError } = useQuery<ReviewsData>({
+  queryKey: ['/api/reviews'],
+  staleTime: 1000 * 60 * 5, // 5 minutes
+});
+This configuration is missing the actual queryFn that makes the API request.
+2. No Google Places API Integration
+The code doesn't have any Google Places API integration, which is typically necessary to fetch Google reviews. You need to:
+
+Set up a Google Cloud project
+Enable the Places API
+Create an API key
+Make requests to the Places API (typically on a backend)
+
+3. Data Structure Handling
+Your component expects a very specific data structure:
+typescriptinterface ReviewsData {
+  name: string;
+  rating: number;
+  url: string;
+  reviews: Review[];
+  fetched_at: string;
+  is_stale?: boolean;
+}
+But if you're not receiving this exact structure from your API, the component will fail.
+Solutions
+Here's how to properly integrate Google reviews:
+1. Create a Backend API Endpoint
+You need a server-side API endpoint that:
+
+Makes requests to the Google Places API with your API key
+Formats the response to match your frontend expectations
+Handles rate limiting and caching
+
+Example backend route (Node.js/Express):
+javascript// On your backend
+const express = require('express');
+const axios = require('axios');
+const router = express.Router();
+
+router.get('/api/reviews', async (req, res) => {
+  try {
+    // Your place ID from Google Maps
+    const placeId = 'YOUR_GOOGLE_PLACE_ID';
+    
+    // Make request to Google Places API
+    const response = await axios.get(
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews,url&key=YOUR_API_KEY`
+    );
+    
+    // Format the response to match your frontend expectations
+    const place = response.data.result;
+    
+    res.json({
+      name: place.name,
+      rating: place.rating,
+      url: place.url,
+      reviews: place.reviews,
+      fetched_at: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error('Error fetching Google reviews:', error);
+    res.status(500).json({ error: 'Failed to fetch reviews' });
+  }
+});
+
+module.exports = router;
+2. Update React Query Configuration
+Update your React Query hook to properly fetch from your API:
+javascriptconst { data, isLoading, isError } = useQuery<ReviewsData>({
+  queryKey: ['/api/reviews'],
+  queryFn: async () => {
+    const response = await fetch('/api/reviews');
+    if (!response.ok) {
+      throw new Error('Failed to fetch reviews');
+    }
+    return response.json();
+  },
+  staleTime: 1000 * 60 * 5, // 5 minutes
+});
+3. Handle Edge Cases
+Make sure your component properly handles cases where:
+
+The API returns fewer reviews than expected
+Reviews have missing fields
+Different formatting for dates or profile photos

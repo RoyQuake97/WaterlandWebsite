@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#F5F5F5"/>
+  
+  <!-- Restaurant structure -->
+  <rect x="150" y="100" width="500" height="250" rx="20" fill="#ffffff" stroke="#0A4C8B" stroke-width="3"/>
+  
+  <!-- Waterpark view windows -->
+  <rect x="180" y="130" width="180" height="100" rx="10" fill="#00c6ff"/>
+  <rect x="440" y="130" width="180" height="100" rx="10" fill="#00c6ff"/>
+  
+  <!-- Window details -->
+  <path d="M180,180 Q270,160 360,180" stroke="#0A4C8B" stroke-width="2" fill="none"/>
+  <path d="M440,180 Q530,160 620,180" stroke="#0A4C8B" stroke-width="2" fill="none"/>
+  
+  <!-- Tables -->
+  <circle cx="230" cy="280" r="25" fill="#FFD447"/>
+  <circle cx="350" cy="280" r="25" fill="#FFD447"/>
+  <circle cx="470" cy="280" r="25" fill="#FFD447"/>
+  <circle cx="590" cy="280" r="25" fill="#FFD447"/>
+  
+  <!-- Chairs -->
+  <circle cx="230" cy="240" r="12" fill="#F86AA0"/>
+  <circle cx="230" cy="320" r="12" fill="#F86AA0"/>
+  <circle cx="350" cy="240" r="12" fill="#F86AA0"/>
+  <circle cx="350" cy="320" r="12" fill="#F86AA0"/>
+  <circle cx="470" cy="240" r="12" fill="#F86AA0"/>
+  <circle cx="470" cy="320" r="12" fill="#F86AA0"/>
+  <circle cx="590" cy="240" r="12" fill="#F86AA0"/>
+  <circle cx="590" cy="320" r="12" fill="#F86AA0"/>
+  
+  <!-- Plates and food -->
+  <circle cx="230" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="1"/>
+  <circle cx="350" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="1"/>
+  <circle cx="470" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="1"/>
+  <circle cx="590" cy="280" r="15" fill="white" stroke="#0A4C8B" stroke-width="1"/>
+  
+  <!-- Food items -->
+  <circle cx="230" cy="280" r="8" fill="#F86AA0"/>
+  <circle cx="350" cy="280" r="8" fill="#FFD447"/>
+  <circle cx="470" cy="280" r="8" fill="#00c6ff"/>
+  <rect x="582" y="275" width="16" height="10" fill="#0A4C8B"/>
+  
+  <!-- Menu sign -->
+  <rect x="350" y="80" width="100" height="40" rx="5" fill="#0A4C8B"/>
+  <text x="400" y="105" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">VIEW MENU</text>
+  
+  <!-- Operating hours -->
+  <rect x="170" y="200" width="100" height="25" rx="5" fill="#F86AA0"/>
+  <text x="220" y="217" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">10 AM - 5 PM</text>
+  
+  <text x="400" y="65" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#0A4C8B">THE HARBOR RESTAURANT</text>
+  <text x="400" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#0A4C8B">INTERNATIONAL CUISINE</text>
+</svg>
