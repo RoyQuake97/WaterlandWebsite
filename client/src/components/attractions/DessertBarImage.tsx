@@ -1,6 +1,5 @@
-
-// Import the image directly to ensure it's included in the build
-import dessertBarImage from '/public/images/attractions/dessert-bar.jpg';
+// Define the path as a string constant
+const dessertBarImage = '/images/dessert-bar.jpg';
 
 // Export a component that returns the image URL
 const DessertBarImage = () => {
